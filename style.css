@@ -1,0 +1,354 @@
+:root {
+    --bgDark: rgb(12, 12, 12);
+    --white: rgb(250, 250, 250);
+    --secondary: rgb(91, 130, 175);
+    --bgLight: rgb(190, 181, 181);
+  }
+  
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: var(--bgDark);
+  
+  }
+  .link {
+    text-decoration: none;
+    color: var(--white);
+    margin: 0 0.5rem;
+    padding: 0 0.6rem;
+    transition: border-bottom 0.2s;
+  }
+  
+  .link:hover {
+    color: #847ed6;
+    border-bottom: 2px solid #0a0b0b;
+  }
+  .link:active {
+    color: #ff97d0;
+    border-bottom: 2px solid #ff97d0;
+  }
+  .navbar a{
+    padding: 3px 2px;
+  }
+  header h4{
+    color: var(--white);
+    font-size: 34px;
+  }
+  .logo img{
+    width: 50px
+  }
+  .navbar{
+    color: var(--white);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  .head {
+    padding: 1rem 0;
+  }
+  .header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 0fr 1fr 2fr;
+    column-gap: 5px;
+  }
+  .logo {
+    margin-right: 3rem;
+  }
+  .secheading {
+    font-size: 32px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    text-align: center;
+    color: var(--bgDark);
+  }
+  body {
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .container {
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;  
+  }
+  #home{
+    background-color: rgb(104, 98, 98);
+  }
+  .desc{
+    background-color: var(--bgLight);
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    align-items: center;
+  }
+  .desc .img img {
+    width: 350px;
+    height: 300px;
+    margin: 40px;
+  }
+  .desc .text {
+    color: var(--white);
+    margin-top: 1rem;
+    padding-left: 7rem;
+  }
+  .desc .text h3 {
+    font-size: 2.7rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+  }
+  .desc .text h5{
+    font-size: 1.9rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #000;
+  }
+  .desc .text h5 span {
+    color: var(--bgDark);
+  }
+  .desc .text p {
+    line-height: 1.9;
+    margin-bottom: 2rem;
+  }
+  
+  section{
+    padding: 3rem;
+  }
+  #aboutme{
+    background-color: #dbbcb0;
+  }
+  #aboutme h3 {
+    margin-bottom: 1rem;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: gray;  
+  }
+  
+  #aboutme p {
+    font-family: "Lato", sans-serif;
+    color: var(--bgDark);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+    font-size: 1.3rem;
+  }
+  .mpart{
+    background-color: #c0b897;
+    display: flex;
+    align-items: center;
+  }
+  #aboutme .image img{
+    margin: 50px;
+    width: 200px;
+    height: 220px;
+  }
+  
+  #education{
+    background: linear-gradient(100deg, rgb(219 180 189), rgb(145 79 100));
+  }
+  
+  
+  #education p {
+    color: var(--primary);
+    font-family: "Lato", sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  
+  #education .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+  #education .card-grid .card {
+    background: #ebe2af;
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  
+  #education .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding-bottom: 9px;
+  }
+  #education .card-grid .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--seconday);
+    line-height: 1.5rem;
+  }
+  #education .card-grid .card:hover {
+    background: rgb(121, 150, 161);
+  }
+  #education .card-grid .card:hover h2 {
+    color: var(--white);
+  }
+  #education .card-grid .card:hover p {
+    color: var(--white);
+  }
+  #achievements{
+    background: linear-gradient(90deg, rgb(71, 125, 109),rgb(88 224 255));
+  }
+  #achievements .card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 2rem;
+    padding-top: 76px;
+    padding-bottom: 76px;
+  }
+  #achievements .card-grid .card {
+    background: rgb(193 183 155);
+    padding: 3rem 2rem;
+    position: relative;
+    text-align: center;
+    transition: all 0.2s ease;
+  }
+  
+  #achievements.card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  #achievements .card-grid .card p {
+    font-family: "Lato", sans-serif;
+    color: var(--seconday);
+    line-height: 1.6;
+  }
+  #achievements .card-grid .card:hover {
+    background: rgb(71, 114, 129);
+  }
+  #achievements .card-grid .card:hover h2 {
+    color: var(--white);
+  }
+  #achievements .card-grid .card:hover p {
+    color: var(--white);
+  }
+  #skills{
+    background:linear-gradient(110deg, rgb(221 215 199), rgb(166 171 225)) ;
+  }
+  
+  .skill {
+      margin-top: 30px;
+      font-size: 17px;
+  }
+  #skills .main-section{
+    padding-bottom: 124px;
+  }
+  .skill span {
+      float: right;
+  }
+  #skills .mainpart{
+    padding-top: 36px;
+  }
+  .skill div {
+      width: 100%;
+      float: left;
+      margin-top: -35px;
+      background: #e7e7e7;
+      border-radius: 10px;
+  }
+  
+  .skill div span {
+      background: #ac55ba;
+      height: 8px;
+      float: left;
+  }
+  #contact{
+    background:linear-gradient(120deg, rgb(180, 211, 212),rgb(21 99 184));
+  }
+  #contact form {
+      width: 100%;
+      margin: 0px auto;
+  }
+  #contact input {
+      width: 100%;
+      float: left;
+      margin-bottom: 20px;
+      height: 40px;
+      padding: 10px;
+      border: 1px solid #a1a1a1;
+  }
+  #contact button {
+      width: 20%;
+      display: grid;
+    align-items: center;
+    justify-content: center;
+      margin-bottom: 20px;
+      height: 40px;
+      padding: 10px;
+      background: #000000;
+      color: #fff;
+      border: none;
+      font-size: 16px;
+    margin-left: 40%;
+  }
+  #contact h3 {
+      font-size: 26px;
+      text-align: center;
+      margin-top: 60px;
+      color: #ff97d0;
+  }
+  #contact h4 {
+      font-size: 22px;
+      text-align: center;
+      margin-top: 10px;
+  }
+  #contact p {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 5px;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  .items-centre {
+    align-items: center;
+  }
+  .justify-between {
+    justify-content: space-between;
+  }
+  .justify-center {
+    justify-content: center;
+  }
+  .justify-right {
+    justify-content: right;
+  }
+  .btn {
+    padding: 0.6rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.2s ease;
+  }
+  .btn {
+    background-color: black;
+    color: white;
+    margin-top: 1rem;
+  }
+  .btn:hover {
+    background: transparent;
+    border-color: rgb(27, 26, 25);
+    color: rgb(109, 147, 180);
+  }
+  footer {
+    background-color: #a5baff;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: var(--bgDark);
+  }
